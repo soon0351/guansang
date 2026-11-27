@@ -1,0 +1,6 @@
+{
+  "name": "조선관상도감 — AI 관상 프로필",
+  "description": "인물사진을 고증에 맞는 조선시대 전통 초상화로 변환하고, 관상·표정·눈빛·스타일·기운을 식물도감 스타일 가로형 인포그래픽으로 완성하는 웹앱입니다.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

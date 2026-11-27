@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Noto Serif KR", Georgia, serif;
+  --font-sans: "IBM Plex Sans KR", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-cream-50: #FBF8F1;
+  --color-cream-100: #F8F4EA;
+  --color-cream-200: #F1EADC;
+  --color-cream-300: #E5DAC5;
+  --color-navy-950: #0D162B;
+  --color-navy-900: #14213D;
+  --color-navy-800: #1E3156;
+  --color-navy-700: #33486B;
+  --color-navy-500: #5B6E8C;
+  --color-gold-700: #7B5B1E;
+  --color-gold-600: #99742E;
+  --color-gold-500: #B89146;
+  --color-gold-400: #CCA964;
+  --color-gold-200: #E4D3AE;
+  --color-seal-700: #9A2B2B;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: #F3EDE0;
+    color: #14213D;
+    scroll-behavior: smooth;
+  }
+}
+
+/* Subtle archival hanji paper grain without loud gradients */
+.hanji-plate {
+  background-color: #F8F4EA;
+  background-image:
+    radial-gradient(rgba(184, 145, 70, 0.055) 1px, transparent 0),
+    linear-gradient(180deg, rgba(255, 253, 248, 0.72) 0%, rgba(244, 237, 222, 0.55) 100%);
+  background-size: 24px 24px, 100% 100%;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
